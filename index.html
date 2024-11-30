@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão Voltar -->
+    <div id="back-button" class="back-button" onclick="goBack()" style="display: none;">
+        ← Voltar
+    </div>
+
+    <div class="container" id="page1">
+        <h1>Contador Especial</h1>
+        <p><h4>Tempo desde que conheci você, Chai ❤️:</h4></p>
+        <div id="counter"></div>
+        <button class="button button-primary" onclick="playClickSound(); goToPage2()">Clique aqui 😗</button>
+    </div>
+
+    <div class="container" id="page2" style="display: none;">
+        <h1>100 Dias de Amizade</h1>
+        <p><h4>100 dias de risadas, conversas com momentos tristes e felizes.</p>
+        <p>Quer renovar nosso contrato de amizade para 2025? 🧐</h4></p>
+        <div class="buttons-container">
+            <button class="button button-green" id="yesButton" onclick="goToPage3()">Sim 🥰</button>
+            <button class="button button-red" id="noButton" onclick="moveNoButton()">Não 🙄</button>
+        </div>
+    </div>
+
+    <div class="container" id="page3" style="display: none;">
+        <h1>Amizade Renovada</h1>
+        <p style="font-style: italic;"><h4>Num clique, num instante, tudo<br> começou,<br>
+Uma nota, um "alguém?", e a<br> resposta chegou.<br>
+A conversa, um fio, entre risos e<br> palavras,<br>
+E, de pouco a pouco, a amizade se<br> entrava.<br><br>
+
+Ela, com seus dias, com seus altos e<br> baixos,<br>
+Tão forte e gentil, mesmo nos seus<br> desmaios.<br>
+E eu, de longe, sem poder estar<br> presente,<br>
+Mas em cada mensagem, era um<br> abraço, um carinho.<br><br>
+
+A distância é traiçoeira, faz o coração<br> sofrer,<br>
+Mas em cada piada, eu tentava fazer<br> você sorrir.<br>
+Te vendo lutar, eu queria te proteger,<br>
+Ser a presença que, por aqui, não<br> podia ir.<br>
+
+Em 100 dias, um mundo de<br> confiança se fez,<br>
+Uma amiga, uma irmã, um abraço<br> que não se desfez.<br>
+Te admiro, te quero, e celebro com<br> alegria,<br>
+Esses 100 dias de amizade, nessa<br> doce poesia.<br><br>
+
+Que venham muitos mais, repletos de<br> risos e histórias,<br>
+De momentos compartilhados, de<br> conquistas e glórias.<br>
+Porque você é uma luz, uma amiga<br> que não se cansa,<br>
+E eu sou grato por essa amizade que<br> tanto avança.</h4></p>
+
+        <button class="button button-primary" id="toggleButton" onclick="toggleImage()">😻 + 🌹</button>
+        <img id="image" src="https://i.imgur.com/k37zpxa.jpeg" alt="Imagem especial de amizade">
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024, Criador: <span class="highlight">@rodr1go_xl</span></p>
+        <audio id="clickSound" preload="auto">
+            <source src="click.mp3" type="audio/mpeg">
+        </audio>
+    </footer>
+</body>
+</html>
